@@ -156,7 +156,8 @@ main {
 /******** Menu *******/
 
 /******** Body *******/
-@media ( max-width: 732px ) {
+
+@media ( max-width: 732px) {
     body {
         background: url('../images/fond-responsive.jpg') no-repeat left fixed;
         background-size: cover;
