@@ -118,7 +118,8 @@ main {
     animation: 1.2s ease-in 1s fadeInFromLeft forwards;
 }
 
-.close-button {
+.close-button,
+.nav-list-responsive {
     display: none;
 }
 
@@ -298,12 +299,12 @@ main {
         cursor: pointer;
     }
 
-    .nav-list {
+    .nav-list-responsive {
         display: flex;
         flex-direction: column;
     }
 
-    .nav-list > li {
+    .nav-list-responsive > li {
         padding: 5%;
         border-bottom: 1px solid lightgray;
     }
