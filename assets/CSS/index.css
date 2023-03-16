@@ -11,10 +11,6 @@ a {
     color: white;
 }
 
-header {
-    height: 6rem;
-}
-
 footer {
     position: absolute;
     bottom: 0;
@@ -41,7 +37,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    height: 3rem;
     font-size: 2rem;
 }
 
