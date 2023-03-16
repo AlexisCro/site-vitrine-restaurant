@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>my_template_index_restaurant</title>
-        <meta name="description" content="This is a template for an index website restaurant">
+        <title>my restaurant</title>
+        <meta name="description" content="This is an exercise for a static website restaurant">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="assets/CSS/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"> -->
         <link rel="stylesheet" href="assets/CSS/index.css">
         <link rel="stylesheet" href="assets/CSS/utilities.css">
     </head>
@@ -16,30 +15,46 @@
                     <div class="container m-0">
                         <a href="index.html" class="nav-link nav-title ml-2 m-0">La folie des papilles</a>
                     </div>
-                    <div class="container">
+                    <div class="container container-list">
                         <ul class="nav-list">
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="restaurant.html">Restaurant</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="pl-1"><a href="menu.html">Menu</a></li>
+                            <li class="pl-1"><a href="restaurant.html">Restaurant</a></li>
+                            <li class="pl-1 pr-1"><a href="contact.html">Contact</a></li>
                         </ul>  
                     </div>
+                    <div class="container-responsive">
+                        <div class="menu-responsive">
+                            <img id="open-menu" class="toggle-menu" src="./assets/images/icônes/menu.png" alt="menu image">
+                        </div>
+                    </div>
+                </div>
+                <div id="responsive-list" class="menu-responsive-list">
+                    <div class="flex justify-content-end position-close-button">
+                        <img id="close-button" class="close-button" src="./assets/images/icônes/close_window.png" alt="button to close menu">
+                    </div>
+                    <ul class="nav-list">
+                        <li class="pl-1"><a href="menu.html">Menu</a></li>
+                        <li class="pl-1"><a href="restaurant.html">Restaurant</a></li>
+                        <li class="pl-1 pr-1"><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </nav>            
         </header>
         <main>
             <div class="flex justify-content-center column">
-                <p class="ml-6 mt-0 mb-0 slogan">Elégance et puissance</p>
-                <p class="ml-5 pl-2 status">Restaurant gastronomique</p>
+                <p class="ml-6 mt-0 mb-0 slogan">Elégance</p>
+                <p class="ml-4 mt-0 mb-0 slogan">puissance</p>
+                <p class="ml-5 mb-0 pl-1 status">Restaurant</p>
+                <p class="ml-6 mb-0 mt-0 pl-2 status">gastronomique</p>
             </div>
         </main>
         <footer>
             <div class="card card-container">
                 <div class="card-body">
-                    <p>&copy; La folie des papilles | 2023 | <a href="mentions.html">mentions légales</a></p>
+                    <p>&copy; La folie des papilles | 2023 | <a href="HTML/mentions.html">mentions légales</a></p>
                 </div>
             </div>
         </footer>
         <script src="assets/JS/index.js"></script>
-        <script src="assets/css/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
     </body>
 </html>
