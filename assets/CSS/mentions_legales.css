@@ -157,6 +157,7 @@ footer {
         justify-content: space-between;
         background-color: none;
         box-shadow: none;
+        padding-top: 1rem;
     }
 
     .nav-list,
@@ -195,6 +196,7 @@ footer {
     }
 
     .position-close-button {
+        margin-top: .5rem;
         padding-top: 1rem;
         padding-right: .5rem;
     }
@@ -219,7 +221,7 @@ footer {
     }
 
     .hide-menu-button {
-        display:none;
+        opacity: 0;
     }
 
     footer {
