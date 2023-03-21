@@ -43,7 +43,38 @@
             </nav>
         </header>
         <main>
-
+            <div class="card-form">
+                <div class="card-form-header">
+                    <h3>Contactez nous</h3>
+                </div>
+                <div class="card-form-body">
+                    <form>
+                        <div class="form-identity">
+                            <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
+                            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-mail">
+                            <input type="text" id="mail" name="mail" placeholder="Votre mail" required>
+                        </div>
+                        <div class="form-choice">
+                            <fieldset>
+                                <legend>Pourquoi nous écrivez-vous</legend>
+                                <label for="avis">Donner un avis</label>
+                                <input type="radio" id="avis" value="avis" name="contact">
+                                <label for="renseignements">Demander des renseignements</label>
+                                <input type="radio" id="renseignements" value="renseignements" name="contact">
+                            </fieldset> 
+                        </div>
+                        <div class="form-text">
+                            <label for="text-contact">Ecrivez nous votre message</label><br>
+                            <textarea id="text-contact" name="text-contact" rows="5" cols="20"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="card card-container">

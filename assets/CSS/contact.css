@@ -1,3 +1,50 @@
+/****** main ***********/
+
+main {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/****** Form ******/
+
+.card-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px -10px grey;
+}
+
+.card-form-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+form > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form input[type="text"] {
+    width: 150px;
+    border: none;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-radius: 5000px;
+    box-shadow: 2px 2px 15px grey;
+    margin: 1rem;
+    height: 20px;
+}
+
 /****** Responsive small device **********/
 
 @media ( max-width: 768px ), (max-height: 370px)  {
