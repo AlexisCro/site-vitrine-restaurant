@@ -32,6 +32,13 @@ form > div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.form-text {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 form input[type="text"] {
@@ -45,9 +52,23 @@ form input[type="text"] {
     height: 20px;
 }
 
+form button {
+    border: none;
+    border-left: 1px solid grey;
+    border-top: 1ps solid grey;
+    border-radius: 5000px;
+    box-shadow: 2px 2px 15px grey;
+    padding: 1rem;
+    width: 200px;
+}
+
 /****** Responsive small device **********/
 
 @media ( max-width: 768px ), (max-height: 370px)  {
+    body {
+        margin: 0;
+    }
+    
     header {
         color: black;
     }
@@ -136,7 +157,7 @@ form input[type="text"] {
     }
 
     footer {
-        position: relative;
+        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
