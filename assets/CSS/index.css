@@ -4,6 +4,7 @@ body {
     background: url('../images/fond_index.jpg') no-repeat center fixed;
     background-size: cover;
     color: white;
+    margin: 0;
 }
 
 a {
@@ -223,7 +224,7 @@ main {
         align-items: center;
         align-content: flex-start;
         justify-content: space-between;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
         padding: 1rem;
     }
@@ -302,7 +303,7 @@ main {
 }
 
 /******* orientation landscape *********/
-@media ( max-width: 768px ), ((max-height: 370px) and (orientation: landscape))  {
+@media ((max-height: 370px) and (orientation: landscape))  {
 
     header {
         color: black;

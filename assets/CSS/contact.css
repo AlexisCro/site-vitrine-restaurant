@@ -1,145 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
-body{
-    margin: 0;
+/******* background *********/
+body {
+    background: url(../images/fond-contact.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: white;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+body > a,
+a,
+header > a,
+.nav-title {
+    color: white;
 }
 
-/******* Navbar *******/
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 2rem;
-}
-
-nav li {
-    list-style: none;
-}
-
-.navbar-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: black;
-    font-family: 'Dancing Script', cursive;
-}
-
-.container {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-around;
-}
-
-.container-responsive {
-    display: none;
-}
-.toggle-menu {
-    padding-right: .5rem;
-}
-.close-button,
-.nav-list-responsive {
-    display: none;
-}
-
-/******* Main ********/
+/**** main ***********/
 
 main {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
-.card-container-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+/****** contact *******/
 
-.card-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.5rem;
-    border: 1px solid lightblue;
-    border-radius: 10px;
+.card-localisation {
     width: 60%;
-}
-
-.card-main > .card-title,
-.card-main > .card-body {
     display: flex;
+    align-self: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-content: center;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px -10px black;
+    padding: 2rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.667);
+    border-top: 1px solid rgba(255, 255, 255, 0.667);
+    backdrop-filter: blur(10px);
 }
 
-.card-main > .card-title {
-    width: 100%;
-    border-bottom: 1px solid lightblue;
-}
-
-/******* Footer ******/
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    margin-top: 2rem;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-}
-
-.card {
+.card-localisation-body {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.card-container {
+.card-localisation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-localisation-map {
+    position: relative;
+    top: -50px;
+    left:200px;
+    border-radius: 15px;
+    padding: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.667);
+    border-top: 1px solid rgba(255, 255, 255, 0.667);
+    backdrop-filter: blur(10px);
+}
+
+.card-localisation-map > iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.logo-contact > img {
+    margin-right: 1rem;
+}
+
+.info-position {
+    display: none;
+}
+
+/****** Form ******/
+
+.card-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.667);
+    border-top: 1px solid rgba(255, 255, 255, 0.667);
+    box-shadow: 15px 15px 30px -10px black;
+    backdrop-filter: blur(10px);
+}
+
+.card-form-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-choice > fieldset {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    padding: 15px;
     width: 100%;
-    background-color: rgba(97, 93, 93, 0.5);
+}
+
+.form-choice > fieldset > .list-group-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.form-choice > fieldset > .group-radio {
+    display: inline;
+    border: none;
+}
+
+.form-choice > fieldset > legend {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+form > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.form-text {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-text-label {
+    align-self: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.form-text > div {
+    margin: 2%;
+}
+
+#text-contact {
+    width: 20rem;
+    border-radius: 15px;
+    resize: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 150px;
+}
+
+form input[type="text"] {
+    width: 150px;
+    border: none;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-radius: 5000px;
+    margin: 1rem;
+    height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+    background: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.667);
+    border-top: 1px solid rgba(255, 255, 255, 0.667);
+}
+
+form input[type="text"]::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+form button {
+    border: none;
+    border-left: 1px solid grey;
+    border-radius: 5000px;
+    box-shadow: 2px 2px 15px grey;
+    padding: 1rem;
+    width: 200px;
+    margin-bottom: 10px;
+    background: none;
+    backdrop-filter: blur(20px);
+    color: white;
+    font-weight: bold;
+}
+
+form button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px black;
 }
 
 /****** Responsive small device **********/
 
 @media ( max-width: 768px ), (max-height: 370px)  {
+    body {
+        margin: 0;
+    }
+    
     header {
         color: black;
     }
@@ -234,6 +302,46 @@ footer {
         right: 0;
         width: 100%;
         display: flex;
+    }
+
+    .info-mail{
+        display: flex;
+    }
+
+    .card-form {
+        width: 70%;
+    }
+
+    .form-choice > fieldset > .list-group-radio {
+        display: block;
+    }
+
+    .group-radio {
+        margin: 2%;
+    }
+
+    #text-contact {
+        width: 90%;
+    }
+
+    .card-localisation-map {
+        display: none;
+    }
+
+    .card-localisation-map > iframe {
+        display: none;
+    }
+
+    .logo-contact {
+        margin: 1rem;
+    }
+
+    .info-position {
+        display: block;
+    }
+
+    .nav-list-responsive > li > a {
+        color: black;
     }
 }
 
