@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../assets/CSS/footer.css">
         <link rel="stylesheet" href="../assets/CSS/contact.css">
     </head>
-    <body>
+    <body style="margin:0;">
         <header>
             <nav class="navbar">
                 <div class="navbar-container">
@@ -43,6 +43,30 @@
             </nav>
         </header>
         <main>
+            <div class="card-localisation">
+                <div class="card-form-header">
+                    <h3>Où nous trouvez ?</h3>
+                </div>
+                <div class="card-localisation-body">
+                    <div class="card-localisation-info">
+                        <div class="info-phone">
+                            <img src="../assets/images/icônes/phone-logo.svg" alt="logo phone">
+                            <a href="tel:0600000000">06 00 00 00 00</a>
+                        </div>
+                        <div class="info-mail">
+                            <img src="../assets/images/icônes/mail.svg" alt="logo mail">
+                            <a href="mailto:lafoliedespapilles@mail.com">lafoliedespapilles@mail.com</a>
+                        </div>
+                        <div class="info-mail">
+                            <img src="../assets/images/icônes/facebook.svg" alt="logo facebook">
+                            <a href="https://www.facebook.com/alexis.crozier.1/" target="_blank">facebook</a>
+                        </div>
+                    </div>
+                    <div class="card-localisation-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11138.939877687302!2d4.811063693333452!3d45.73640964232974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebcf27ec0c35%3A0x9893cc1f9528182!2sLa%20Confluence%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1679907200566!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
             <div class="card-form">
                 <div class="card-form-header">
                     <h3>Contactez nous</h3>
@@ -58,11 +82,17 @@
                         </div>
                         <div class="form-choice">
                             <fieldset>
-                                <legend>Pourquoi nous écrivez-vous</legend>
-                                <label for="avis">Donner un avis</label>
-                                <input type="radio" id="avis" value="avis" name="contact">
-                                <label for="renseignements">Demander des renseignements</label>
-                                <input type="radio" id="renseignements" value="renseignements" name="contact">
+                                <legend>Pourquoi vous nous écrivez ?</legend>
+                                <div class="list-group-radio">
+                                    <div class="group-radio">
+                                        <label for="avis">Donner un avis</label>
+                                        <input type="radio" id="avis" value="avis" name="contact">
+                                    </div>
+                                    <div class="group-radio">
+                                        <label for="renseignements">Demander des renseignements</label>
+                                        <input type="radio" id="renseignements" value="renseignements" name="contact">
+                                    </div>
+                                </div>
                             </fieldset> 
                         </div>
                         <div class="form-text">
@@ -90,3 +120,4 @@
         <script src="../assets/JS/open-close-menu.js"></script>
     </body>
 </html>
+
