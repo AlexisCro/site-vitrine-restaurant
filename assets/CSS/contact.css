@@ -64,6 +64,19 @@ main {
     backdrop-filter: blur(10px);
 }
 
+.card-localisation-map > iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.logo-contact > img {
+    margin-right: 1rem;
+}
+
+.info-position {
+    display: none;
+}
+
 /****** Form ******/
 
 .card-form {
@@ -283,12 +296,52 @@ form button:hover {
     }
 
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         left: 0;
         right: 0;
         width: 100%;
         display: flex;
+    }
+
+    .info-mail{
+        display: flex;
+    }
+
+    .card-form {
+        width: 70%;
+    }
+
+    .form-choice > fieldset > .list-group-radio {
+        display: block;
+    }
+
+    .group-radio {
+        margin: 2%;
+    }
+
+    #text-contact {
+        width: 90%;
+    }
+
+    .card-localisation-map {
+        display: none;
+    }
+
+    .card-localisation-map > iframe {
+        display: none;
+    }
+
+    .logo-contact {
+        margin: 1rem;
+    }
+
+    .info-position {
+        display: block;
+    }
+
+    .nav-list-responsive > li > a {
+        color: black;
     }
 }
 
