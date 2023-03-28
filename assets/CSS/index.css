@@ -176,7 +176,7 @@ main {
 }
 
 /******** small devices **********/
-@media ( max-width: 732px ), (max-height: 370px) {
+@media ( max-width: 855px ), (max-height: 370px) {
     body {
         background: url('../images/fond-responsive.jpg') no-repeat center fixed;
         background-size: cover;

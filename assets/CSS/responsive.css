@@ -1,6 +1,6 @@
 /****** Responsive small device **********/
 
-@media ( max-width: 768px ), (max-height: 370px)  {
+@media ( max-width: 855px ), (max-height: 370px)  {
     header {
         color: black;
     }

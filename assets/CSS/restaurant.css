@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+/**** main ***********/
+
+main {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.presentation-cheffe {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.responsive-portrait {
+    display: none;
+}
+
+article > h3 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin: 2rem;
+}
+
+.card-presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.portrait-cheffe-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+article > .card-meal > .card-header {
+    margin-bottom: 2rem;
+}
+
+.signature-meal {
+    margin-bottom: 2rem;
+}
+
+article > .card-meal > .card-header > p:first-child {
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+article > .card-meal > .card-header > p:last-child {
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+article > .card-meal > .card-header::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    border-top: 1px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+article > .card-meal > .card-header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    border-top: 1px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+article > .card-meal > .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+article > .card-meal > .card-body > .card-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/****** video ********/
+
+section > video {
+    width: 100%;
+    animation: FadeInVideo 2.5s ease-in .5s forwards;
+    opacity: 0;
+}
+
+/****** Responsive small device **********/
+
+@media ( max-width: 855px ), (max-height: 370px)  {
+    body {
+        margin: 0;
+    }
+    
+    header {
+        color: black;
+    }
+
+    .container {
+        padding-top: .5rem;
+    }
+
+    main {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-between;
+        background-color: none;
+        box-shadow: none;
+        padding-top: 1rem;
+    }
+
+    .nav-list,
+    .container-list {
+        display: none;
+    }
+
+    .container-responsive {
+        display: flex;
+    }
+
+    .navbar-container > .container-list {
+        display: none;
+    }
+
+    .toggle-menu:hover {
+        cursor: pointer;
+    }
+
+    .menu-responsive-list {
+        display: none;
+        animation: openMenuSmallDevice .5s ease-in;
+    }
+
+    .menu-active {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50vw;
+        background-color: rgba(255, 255, 255, 0.769);
+        z-index: 10;
+    }
+
+    .position-close-button {
+        margin-top: .5rem;
+        padding-top: 1rem;
+        padding-right: .5rem;
+    }
+
+    .close-button {
+        display: block;
+        animation: displayCloseButton .9 ease-in 1.2s forwards;
+    }
+
+    .close-button:hover {
+        cursor: pointer;
+    }
+
+    .nav-list-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list-responsive > li {
+        padding: 5%;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .hide-menu-button {
+        opacity: 0;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .nav-list-responsive > li > a {
+        color: black;
+    }
+
+    .card-presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portrait-cheffe-text {
+        margin: 0;
+    }
+
+    .default-portrait {
+        display: none;
+    }
+
+    .responsive-portrait {
+        display: inline;
+        width: 100%;
+    }
+
+    article > .card-meal > .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-picture img {
+        width: 100%;
+    }
+}
+
+/****** Orientation landscape ************/
+
+@media ( (max-height: 370px) and (orientation: landscape))  {
+    header {
+        color: black;
+    }
+
+    .container {
+        padding-top: .5rem;
+    }
+
+    main {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-between;
+        background-color: none;
+        box-shadow: none;
+        padding-top: 1rem;
+    }
+
+    .nav-list,
+    .container-list {
+        display: none;
+    }
+
+    .container-responsive {
+        display: flex;
+    }
+
+    .navbar-container > .container-list {
+        display: none;
+    }
+
+    .toggle-menu:hover {
+        cursor: pointer;
+    }
+
+    .menu-responsive-list {
+        display: none;
+        animation: openMenuSmallDevice .5s ease-in;
+    }
+
+    .menu-active {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50vw;
+        background-color: rgba(255, 255, 255, 0.769);
+        z-index: 10;
+    }
+
+    .position-close-button {
+        margin-top: .5rem;
+        padding-top: 1rem;
+        padding-right: .5rem;
+    }
+
+    .close-button {
+        display: block;
+        animation: displayCloseButton .9 ease-in 1.2s forwards;
+    }
+
+    .close-button:hover {
+        cursor: pointer;
+    }
+
+    .nav-list-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list-responsive > li {
+        padding: 5%;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .hide-menu-button {
+        opacity: 0;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+    }
+}
+
+/************ Animation ****************/
+
+@keyframes openMenuSmallDevice {
+    from {
+        position: fixed;
+        right: -50vw;
+    }
+    to {
+        position: fixed;
+        right: 0;
+    }
+}
+
+@keyframes displayCloseButton {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInVideo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
