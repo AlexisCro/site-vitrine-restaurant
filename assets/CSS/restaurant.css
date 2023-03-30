@@ -141,7 +141,7 @@ section > video {
         align-items: center;
         align-content: flex-start;
         justify-content: space-between;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
         padding-top: 1rem;
     }
@@ -272,7 +272,7 @@ section > video {
         align-items: center;
         align-content: flex-start;
         justify-content: space-between;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
         padding-top: 1rem;
     }
