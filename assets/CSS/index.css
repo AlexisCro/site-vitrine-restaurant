@@ -208,7 +208,7 @@ main {
 
     main > div > p:last-child {
         margin-left: 20%;
-        padding-left: 15;
+        padding-left: 15px;
     }
 
     main > div > p:nth-child(3) {
